@@ -28,7 +28,7 @@
 				<!-- IF !maintenanceHeader -->
 				<!-- IF config.loggedIn -->
 
-				<ul id="logged-in-menu" class="nav navbar-nav navbar-right">
+				<ul id="logged-in-menu" class="nav navbar-nav navbar-right" style="padding-top:7px">
 					<li class="notifications dropdown text-center hidden-xs" component="notifications">
 						<a href="{relative_path}/notifications" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown" data-ajaxify="false" role="button">
 							<i component="notifications/icon" class="fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}"></i>
@@ -37,7 +37,7 @@
 							<li>
 								<ul component="notifications/list" class="notification-list">
 									<li class="loading-text">
-										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
+										<a href="#"><i class="fa fa-refresh fa-spin" style="font-size: 20px; color: dimgrey !important"></i> [[global:notifications.loading]]</a>
 									</li>
 								</ul>
 							</li>
@@ -49,7 +49,7 @@
 					<!-- IF !config.disableChat -->
 					<li class="chats dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="{relative_path}/user/{user.userslug}/chats" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown" data-ajaxify="false" role="button">
-							<i component="chat/icon" class="fa fa-comment-o fa-fw unread-count" data-content="{unreadCount.chat}"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
+							<i component="chat/icon" class="fa fa-comment-o fa-fw unread-count" style="font-size: 20px; color: dimgrey !important" data-content="{unreadCount.chat}"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
 							<li>
@@ -65,7 +65,7 @@
 					</li>
 					<!-- ENDIF !config.disableChat -->
 
-					<li id="user_label" class="dropdown">
+					<li id="user_label" class="dropdown" style="padding-top:7px">
 						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
 							<!-- IF user.picture -->
 							<img component="header/userpicture" src="{user.picture}" alt="{user.username}"/>
@@ -147,7 +147,7 @@
 
 				</ul>
 				<!-- ELSE -->
-				<ul id="logged-out-menu" class="nav navbar-nav navbar-right" style="padding-top:9px">
+				<ul id="logged-out-menu" class="nav navbar-nav navbar-right" style="padding-top:7px">
 					<!-- IF allowRegistration -->
 					<li>
 						<a href="http://mindcureglobal.com/accounts/register">
@@ -165,7 +165,7 @@
 				</ul>
 				<!-- ENDIF config.loggedIn -->
 				<!-- IF config.searchEnabled -->
-				<ul class="nav navbar-nav navbar-right" style="padding-top:9px">
+				<ul class="nav navbar-nav navbar-right" style="padding-top:7px">
 					<li>
 						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET">
 							<button id="search-button" type="button" class="btn btn-link"><i class="fa fa-search fa-fw" title="[[global:header.search]]"></i></button>
@@ -181,7 +181,7 @@
 				</ul>
 				<!-- ENDIF config.searchEnabled -->
 
-				<ul class="nav navbar-nav navbar-right hidden-xs" style="padding-top:9px">
+				<ul class="nav navbar-nav navbar-right hidden-xs" style="padding-top:7px">
 					<li>
 						<a href="#" id="reconnect" class="hide" title="Connection to {config.siteTitle} has been lost, attempting to reconnect...">
 							<i class="fa fa-check"></i>
@@ -189,7 +189,7 @@
 					</li>
 				</ul>
 
-				<ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md" style="padding-top:9px">
+				<ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md" style="padding-top:7px">
 					<li class="dropdown">
 						<a><i class="fa fa-angle-double-up pointer fa-fw pagetop"></i></a>
 						<a><i class="fa fa-angle-up pointer fa-fw pageup"></i></a>
@@ -213,13 +213,13 @@
 					</li>
 				</ul>
 
-				<ul id="main-nav" class="nav navbar-nav" style="padding-left:12em !important; padding-top:9px">
+				<ul id="main-nav" class="nav navbar-nav" style="padding-left:12em !important; padding-top:7px">
 					<!-- BEGIN navigation -->
 					<!-- IF function.displayMenuItem, @index -->
 					<li class="{navigation.class}">
 						<a class="navigation-link" href="{navigation.route}" title="{navigation.title}" <!-- IF navigation.id -->id="{navigation.id}"<!-- ENDIF navigation.id --><!-- IF navigation.properties.targetBlank --> target="_blank"<!-- ENDIF navigation.properties.targetBlank -->>
 							<!-- IF navigation.iconClass -->
-							<i class="fa fa-fw {navigation.iconClass}" style="font-size: 20px; color: #888888 !important" data-content="{navigation.content}"></i>
+							<i class="fa fa-fw {navigation.iconClass}" style="font-size: 20px; color: dimgrey !important" data-content="{navigation.content}"></i>
 							<!-- ENDIF navigation.iconClass -->
 
 							<!-- IF navigation.text -->
@@ -232,7 +232,7 @@
 				</ul>
 
 				<!-- ELSE -->
-				<ul class="nav navbar-nav navbar-right" style="padding-top:9px">
+				<ul class="nav navbar-nav navbar-right" style="padding-top:7px">
 					<li>
 						<a href="http://mindcureglobal.com/accounts/login">
 							<i class="fa fa-sign-in fa-fw hidden-sm hidden-md hidden-lg"></i>
