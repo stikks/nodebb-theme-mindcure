@@ -10,7 +10,7 @@
 
 				<!-- IF brand:logo -->
 				<a href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->">
-					<img alt="{brand:logo:alt}" class="{brand:logo:display} forum-logo" src="{brand:logo}" />
+					<img alt="{brand:logo:alt}" class="{brand:logo:display} forum-logo" style="max-height: 60px !important; padding-top: 5px;" src="{brand:logo}" />
 				</a>
 				<!-- ENDIF brand:logo -->
 				<!-- IF config.showSiteTitle -->
@@ -147,7 +147,7 @@
 
 				</ul>
 				<!-- ELSE -->
-				<ul id="logged-out-menu" class="nav navbar-nav navbar-right">
+				<ul id="logged-out-menu" class="nav navbar-nav navbar-right" style="padding-top:9px">
 					<!-- IF allowRegistration -->
 					<li>
 						<a href="http://mindcureglobal.com/accounts/register">
@@ -165,7 +165,7 @@
 				</ul>
 				<!-- ENDIF config.loggedIn -->
 				<!-- IF config.searchEnabled -->
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right" style="padding-top:9px">
 					<li>
 						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET">
 							<button id="search-button" type="button" class="btn btn-link"><i class="fa fa-search fa-fw" title="[[global:header.search]]"></i></button>
@@ -178,15 +178,15 @@
 							</div>
 						</form>
 					</li>
-					<li class="visible-xs" id="search-menu">
-						<a href="{relative_path}/search">
-							<i class="fa fa-search fa-fw"></i> [[global:search]]
-						</a>
-					</li>
+					// <li class="visible-xs" id="search-menu">
+					// 	<a href="{relative_path}/search">
+					// 		<i class="fa fa-search fa-fw"></i> [[global:search]]
+					// 	</a>
+					// </li>
 				</ul>
 				<!-- ENDIF config.searchEnabled -->
 
-				<ul class="nav navbar-nav navbar-right hidden-xs">
+				<ul class="nav navbar-nav navbar-right hidden-xs" style="padding-top:9px">
 					<li>
 						<a href="#" id="reconnect" class="hide" title="Connection to {config.siteTitle} has been lost, attempting to reconnect...">
 							<i class="fa fa-check"></i>
@@ -194,7 +194,7 @@
 					</li>
 				</ul>
 
-				<ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md">
+				<ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md" style="padding-top:9px">
 					<li class="dropdown">
 						<a><i class="fa fa-angle-double-up pointer fa-fw pagetop"></i></a>
 						<a><i class="fa fa-angle-up pointer fa-fw pageup"></i></a>
@@ -218,7 +218,7 @@
 					</li>
 				</ul>
 
-				<ul id="main-nav" class="nav navbar-nav">
+				<ul id="main-nav" class="nav navbar-nav" style="padding-left:12em !important; padding-top:9px">
 					<!-- BEGIN navigation -->
 					<!-- IF function.displayMenuItem, @index -->
 					<li class="{navigation.class}">
@@ -237,7 +237,7 @@
 				</ul>
 
 				<!-- ELSE -->
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right" style="padding-top:9px">
 					<li>
 						<a href="http://mindcureglobal.com/accounts/login">
 							<i class="fa fa-sign-in fa-fw hidden-sm hidden-md hidden-lg"></i>
