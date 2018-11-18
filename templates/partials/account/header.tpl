@@ -28,7 +28,7 @@
 	</div>
 
 	<div class="container">
-		<!-- IMPORT partials/account/menu.tpl -->
+		<!-- IMPORT partials/account/old_menu.tpl -->
 		<!-- IF allowCoverPicture -->
 		<!-- IF canEdit -->
 		<div class="controls">
