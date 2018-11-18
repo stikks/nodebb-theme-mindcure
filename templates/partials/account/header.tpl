@@ -1,5 +1,5 @@
 
-<div class="cover" component="account/cover" style="background-image: url({cover:url}); background-position: {cover:position};" style="height: 400px !important">
+<div class="cover" component="account/cover" style="background-image: url({cover:url}); background-position: {cover:position}; height: 400px !important">
 	
 	<!-- IF loggedIn -->
 	<!-- IF !isSelf -->
