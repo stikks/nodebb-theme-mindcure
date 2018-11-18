@@ -9,6 +9,10 @@
 		<!-- ENDIF picture -->
 		<i component="user/status" class="fa fa-circle status {status}" title="[[global:{status}]]"></i>
 
+		<button>
+			<a href="{config.relative_path}/user/{userslug}/edit">[[user:edit]]</a>
+		</button>
+
 		<!-- IF loggedIn -->
 		<!-- IF !isSelf -->
 		<button class="btn-morph fab <!-- IF isFollowing -->heart<!-- ELSE -->plus<!-- ENDIF isFollowing --><!-- IF banned --> hide<!-- ENDIF banned -->" title="<!-- IF isFollowing -->[[global:unfollow]]<!-- ELSE -->[[global:follow]]<!-- ENDIF isFollowing -->">
