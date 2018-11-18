@@ -2,6 +2,18 @@
 
 <div class="cover" component="account/cover" style="background-image: url({cover:url}); background-position: {cover:position};" style="height: 400px !important">
 	
+	<!-- IF loggedIn -->
+	<!-- IF !isSelf -->
+	<button style="margin-top: 30px; margin-left: 20px; float: left;" class="btn-morph fab <!-- IF isFollowing -->heart<!-- ELSE -->plus<!-- ENDIF isFollowing --><!-- IF banned --> hide<!-- ENDIF banned -->" title="<!-- IF isFollowing -->[[global:unfollow]]<!-- ELSE -->[[global:follow]]<!-- ENDIF isFollowing -->">
+		<span style="margin-left: 20px;font-size: 16px;">
+			<span class="s1"></span>
+			<span class="s2"></span>
+			<span class="s3"></span>
+		</span>
+	</button>
+	<!-- ENDIF !isSelf -->
+	<!-- ENDIF loggedIn -->
+
 	<a href="{config.relative_path}/user/{userslug}/edit" class="btn btn-xs btn-primary" style="margin-top: 30px; margin-right: 20px; float: right; padding: 10px">
 		[[user:edit]]
 	</a>
@@ -14,17 +26,6 @@
 		<!-- ENDIF picture -->
 		<i component="user/status" class="fa fa-circle status {status}" title="[[global:{status}]]"></i>
 
-		<!-- IF loggedIn -->
-		<!-- IF !isSelf -->
-		<button class="btn-morph fab <!-- IF isFollowing -->heart<!-- ELSE -->plus<!-- ENDIF isFollowing --><!-- IF banned --> hide<!-- ENDIF banned -->" title="<!-- IF isFollowing -->[[global:unfollow]]<!-- ELSE -->[[global:follow]]<!-- ENDIF isFollowing -->">
-			<span style="margin-left: 20px;font-size: 16px;">
-				<span class="s1"></span>
-				<span class="s2"></span>
-				<span class="s3"></span>
-			</span>
-		</button>
-		<!-- ENDIF !isSelf -->
-		<!-- ENDIF loggedIn -->
 	</div>
 
 	<div class="container">
