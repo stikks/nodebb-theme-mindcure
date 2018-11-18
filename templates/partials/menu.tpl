@@ -29,6 +29,25 @@
 				<!-- IF config.loggedIn -->
 
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right" style="padding-top:7px">
+					<!-- IF !config.disableChat -->
+					<li class="chats dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="{relative_path}/user/{user.userslug}/chats" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown" data-ajaxify="false" role="button">
+							<i component="chat/icon" class="fa fa-comments-o fa-fw unread-count" style="font-size: 20px; color: dimgrey !important" data-content="{unreadCount.chat}"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
+							<li>
+								<ul component="chat/list" class="chat-list chats-list">
+									<li class="loading-text">
+										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
+									</li>
+								</ul>
+							</li>
+							<li class="notif-dropdown-link"><a href="#" class="mark-all-read" component="chats/mark-all-read">[[modules:chat.mark_all_read]]</a></li>
+							<li class="notif-dropdown-link"><a href="{relative_path}/user/{user.userslug}/chats">[[modules:chat.see_all]]</a></li>
+						</ul>
+					</li>
+					<!-- ENDIF !config.disableChat -->
+
 					<li class="notifications dropdown text-center hidden-xs" component="notifications">
 						<a href="{relative_path}/notifications" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown" data-ajaxify="false" role="button">
 							<i component="notifications/icon" class="fa fa-fw fa-bell-o unread-count" style="font-size: 20px; color: dimgrey !important" data-content="{unreadCount.notification}"></i>
@@ -45,25 +64,6 @@
 							<li class="notif-dropdown-link"><a href="{relative_path}/notifications">[[notifications:see_all]]</a></li>
 						</ul>
 					</li>
-
-					<!-- IF !config.disableChat -->
-					<li class="chats dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="{relative_path}/user/{user.userslug}/chats" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown" data-ajaxify="false" role="button">
-							<i component="chat/icon" class="fa fa-comment-o fa-fw unread-count" style="font-size: 20px; color: dimgrey !important" data-content="{unreadCount.chat}"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
-							<li>
-								<ul component="chat/list" class="chat-list chats-list">
-									<li class="loading-text">
-										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
-									</li>
-								</ul>
-							</li>
-							<li class="notif-dropdown-link"><a href="#" class="mark-all-read" component="chats/mark-all-read">[[modules:chat.mark_all_read]]</a></li>
-							<li class="notif-dropdown-link"><a href="{relative_path}/user/{user.userslug}/chats">[[modules:chat.see_all]]</a></li>
-						</ul>
-					</li>
-					<!-- ENDIF !config.disableChat -->
 
 					<li id="user_label" class="dropdown">
 						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
@@ -215,7 +215,7 @@
 					</li>
 				</ul>
 
-				<ul id="main-nav" class="nav navbar-nav" style="padding-left:12em !important; padding-top:7px">
+				<ul id="main-nav" class="nav navbar-nav" style="padding-left:10em !important; padding-top:7px">
 					<!-- BEGIN navigation -->
 					<!-- IF function.displayMenuItem, @index -->
 					<li class="{navigation.class}">
