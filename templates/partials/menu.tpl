@@ -4,18 +4,19 @@
 		<i class="fa fa-lg fa-fw fa-bars"></i>
 	</button>
 
+
 	<!-- IMPORT partials/account/menu.tpl -->
-
-	<button type="button" class="navbar-toggle hidden" id="mobile-therapy">
-		<span class="notification-icon fa fa-fw fa-comments unread-count"></span>
-		<i class="fa fa-lg fa-comments"></i>
-	</button>
-
 
 	<button type="button" class="navbar-toggle hidden" id="mobile-chats">
 		<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>
 		<i class="fa fa-lg fa-comment-o"></i>
 	</button>
+
+	<button type="button" class="navbar-toggle hidden" id="mobile-chats">
+		<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>
+		<i class="fa fa-lg fa-comment-o"></i>
+	</button>
+
 
 	<!-- IF brand:logo -->
 	<a href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->">
