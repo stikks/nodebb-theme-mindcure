@@ -70,7 +70,7 @@
 							<!-- IF user.picture -->
 							<img component="header/userpicture" src="{user.picture}" alt="{user.username}"/>
 							<!-- ELSE -->
-							<span component="header/usericon" class="user-icon" style="background-color: {user.icon:bgColor}; display: block;">{user.icon:text}</span>
+							<span component="header/usericon" class="user-icon" style="background-color: {user.icon:bgColor}; display: block;"><i class="fa fa-user fa-fw"></i> </span>
 							<!-- ENDIF user.picture -->
 							<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
 						</label>
@@ -165,10 +165,12 @@
 				</ul>
 				<!-- ENDIF config.loggedIn -->
 				<!-- IF config.searchEnabled -->
-				<ul class="nav navbar-nav navbar-right" style="padding-top:7px">
+				<ul class="nav navbar-nav navbar-right" style="padding-top:10px">
 					<li>
 						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET">
-							<button id="search-button" type="button" class="btn btn-link"><i class="fa fa-search fa-fw" style="font-size: 20px" title="[[global:header.search]]"></i></button>
+							<button id="search-button" type="button" class="btn btn-link" style="max-width: 135px;">
+								<span style="padding-top: 8px">Advanced search</span>
+							</button>
 							<div class="hidden" id="search-fields">
 								<div class="form-group">
 									<input type="text" class="form-control" placeholder="[[global:search]]" name="query" value="">
