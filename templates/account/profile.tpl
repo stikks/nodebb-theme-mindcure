@@ -47,19 +47,19 @@
 			</div>
 
 			<div class="stat" style="font-size: 25px">
-				<span style="display: inline-block; color: ivory"><i class="fa fa-eye"></i></span>
+				<span style="display: inline-block; color: blue"><i class="fa fa-eye"></i></span>
 				<div class="human-readable-number" title="{profileviews}">{profileviews}</div>
 				<!--  <span class="stat-label">[[user:profile_views]]</span> -->
 			</div>
 
 			<div class="stat" style="font-size: 25px">
-				<span style="display: inline-block; color: ivory"><i class="fa fa-users"></i></span>
+				<span style="display: inline-block; color: green"><i class="fa fa-users"></i></span>
 				<div class="human-readable-number" title="{followerCount}">{followerCount}</div>
 				<!--  <span class="stat-label">[[user:followers]]</span> -->
 			</div>
 
 			<div class="stat" style="font-size: 25px">
-				<span style="display: inline-block; color: ivory"><i class="fa fa-user"></i></span>
+				<span style="display: inline-block; color: black"><i class="fa fa-user"></i></span>
 				<div class="human-readable-number"  title="{followingCount}">{followingCount}</div>
 				<!--  <span class="stat-label">[[user:following]]</span> -->
 			</div>
