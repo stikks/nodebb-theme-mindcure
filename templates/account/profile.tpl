@@ -33,9 +33,9 @@
 
 		<div class="account-stats">
 			<!-- IF !reputation:disabled -->
-			<div class="stat">
-				<i class="fa fa-star"></i>
-				<div class="human-readable-number" title="{reputation}">{reputation}</div>
+			<div class="stat" style="font-size: 15px">
+				<span style="display: inline-block"><i class="fa fa-star"></i></span>
+				<div class="human-readable-number" style="display: inline-block" title="{reputation}">{reputation}</div>
 				<!-- <span class="stat-label">[[global:reputation]]</span> -->
 			</div>
 			<!-- ENDIF !reputation:disabled -->
