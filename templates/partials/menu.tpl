@@ -168,7 +168,7 @@
 				<ul class="nav navbar-nav navbar-right" style="padding-top:12px">
 					<li>
 						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET">
-							<button id="search-button" type="button" class="btn btn-primary" style="max-width: 135px;">
+							<button id="search-button" type="button" class="btn btn-link" style="max-width: 135px;">
 								Advanced search
 							</button>
 							<div class="hidden" id="search-fields">
@@ -215,7 +215,7 @@
 					</li>
 				</ul>
 
-				<ul id="main-nav" class="nav navbar-nav" style="padding-left:8em !important; padding-top:12px">
+				<ul id="main-nav" class="nav navbar-nav" style="padding-left:4em !important; padding-top:12px">
 					<!-- BEGIN navigation -->
 					<!-- IF function.displayMenuItem, @index -->
 					<li class="{navigation.class}">
