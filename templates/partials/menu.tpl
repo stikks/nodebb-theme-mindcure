@@ -31,7 +31,7 @@
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right" style="padding-top:7px">
 					<li class="notifications dropdown text-center hidden-xs" component="notifications">
 						<a href="{relative_path}/notifications" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown" data-ajaxify="false" role="button">
-							<i component="notifications/icon" class="fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}"></i>
+							<i component="notifications/icon" class="fa fa-fw fa-bell-o unread-count" style="font-size: 20px; color: dimgrey !important" data-content="{unreadCount.notification}"></i>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="notif_dropdown">
 							<li>
@@ -65,7 +65,7 @@
 					</li>
 					<!-- ENDIF !config.disableChat -->
 
-					<li id="user_label" class="dropdown" style="padding-top:7px">
+					<li id="user_label" class="dropdown">
 						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
 							<!-- IF user.picture -->
 							<img component="header/userpicture" src="{user.picture}" alt="{user.username}"/>
