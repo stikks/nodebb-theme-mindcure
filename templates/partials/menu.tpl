@@ -147,7 +147,7 @@
 
 				</ul>
 				<!-- ELSE -->
-				<ul id="logged-out-menu" class="nav navbar-nav navbar-right" style="padding-top:7px">
+				<ul id="logged-out-menu" class="nav navbar-nav navbar-right" style="padding-top:12px">
 					<!-- IF allowRegistration -->
 					<li>
 						<a href="http://mindcureglobal.com/accounts/register">
@@ -215,7 +215,7 @@
 					</li>
 				</ul>
 
-				<ul id="main-nav" class="nav navbar-nav" style="padding-left:8em !important; padding-top:7px">
+				<ul id="main-nav" class="nav navbar-nav" style="padding-left:6em !important; padding-top:12px">
 					<!-- BEGIN navigation -->
 					<!-- IF function.displayMenuItem, @index -->
 					<li class="{navigation.class}">
@@ -234,7 +234,7 @@
 				</ul>
 
 				<!-- ELSE -->
-				<ul class="nav navbar-nav navbar-right" style="padding-top:7px">
+				<ul class="nav navbar-nav navbar-right" style="padding-top:12px">
 					<li>
 						<a href="http://mindcureglobal.com/accounts/login">
 							<i class="fa fa-sign-in fa-fw hidden-sm hidden-md hidden-lg"></i>
