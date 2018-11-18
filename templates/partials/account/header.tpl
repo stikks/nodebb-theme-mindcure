@@ -4,7 +4,7 @@
 	
 	<a href="{config.relative_path}/user/{userslug}/edit" class="btn btn-xs btn-primary" style="margin-top: 30px; margin-right: 20px; float: right; padding: 10px">
 		[[user:edit]]
-	</button>
+	</a>
 	
 	<div class="avatar-wrapper" data-uid="{uid}">
 		<!-- IF picture -->
