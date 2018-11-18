@@ -28,9 +28,9 @@
 				<!-- IF !maintenanceHeader -->
 				<!-- IF config.loggedIn -->
 
-				<ul id="logged-in-menu" class="nav navbar-nav navbar-right" style="padding-top:12px">
+				<ul id="logged-in-menu" class="nav navbar-nav navbar-right">
 					<!-- IF !config.disableChat -->
-					<li class="chats dropdown">
+					<li class="chats dropdown" style="padding-top:12px">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="{relative_path}/user/{user.userslug}/chats" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown" data-ajaxify="false" role="button">
 							<i component="chat/icon" class="fa fa-comments-o fa-fw unread-count" style="font-size: 20px; color: dimgrey !important" data-content="{unreadCount.chat}"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
 						</a>
@@ -48,7 +48,7 @@
 					</li>
 					<!-- ENDIF !config.disableChat -->
 
-					<li class="notifications dropdown text-center hidden-xs" component="notifications">
+					<li class="notifications dropdown text-center hidden-xs" component="notifications" style="padding-top:12px">
 						<a href="{relative_path}/notifications" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown" data-ajaxify="false" role="button">
 							<i component="notifications/icon" class="fa fa-fw fa-bell-o unread-count" style="font-size: 20px; color: dimgrey !important" data-content="{unreadCount.notification}"></i>
 						</a>
@@ -65,7 +65,7 @@
 						</ul>
 					</li>
 
-					<li id="user_label" class="dropdown">
+					<li id="user_label" class="dropdown" style="padding-top:8px">
 						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
 							<!-- IF user.picture -->
 							<img component="header/userpicture" src="{user.picture}" alt="{user.username}"/>
@@ -169,7 +169,7 @@
 					<li>
 						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET">
 							<button id="search-button" type="button" class="btn btn-link" style="max-width: 135px;">
-								<span style="padding-top: 8px">Advanced search</span>
+								<span>Advanced search</span>
 							</button>
 							<div class="hidden" id="search-fields">
 								<div class="form-group">
