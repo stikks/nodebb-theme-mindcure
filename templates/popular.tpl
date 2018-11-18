@@ -45,7 +45,7 @@
 
 	<br />
 
-	<div class="category">
+	<div class="category" style="padding: 30px; border: 2px solid whitesmoke; background: #f9fbfb70;">
 		<!-- IF !topics.length -->
 		<div class="alert alert-warning" id="category-no-topics">[[recent:no_popular_topics]]</div>
 		<!-- ENDIF !topics.length -->
