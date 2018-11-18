@@ -6,6 +6,12 @@
 
 	<!-- IMPORT partials/account/menu.tpl -->
 
+	<button type="button" class="navbar-toggle hidden" id="mobile-therapy">
+		<span class="notification-icon fa fa-fw fa-comment-dots unread-count"></span>
+		<i class="fa fa-lg fa-comment-dots"></i>
+	</button>
+
+
 	<button type="button" class="navbar-toggle hidden" id="mobile-chats">
 		<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>
 		<i class="fa fa-lg fa-comment-o"></i>
