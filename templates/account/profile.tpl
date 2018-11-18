@@ -58,12 +58,8 @@
 			<!--  <span>[[user:joined]]</span>
 			 <strong class="timeago" title="{joindateISO}"></strong> -->
 
-			<div style="text-align: center !important">
-				<span class="stars">{users.reputation}</span><br>
-			</div>
-
 			<span>[[user:lastonline]]</span>
-			<strong class="timeago" title="{lastonlineISO}"></strong><br />
+			<strong class="timeago" title="{lastonlineISO}"></strong> | <span class="stars">{users.reputation}</span><br />
 
 			<!-- IF email -->
 			<span>[[user:email]]</span>
