@@ -1,4 +1,3 @@
-<!-- IMPORT partials/breadcrumbs.tpl -->
 
 <div class="cover" component="account/cover" style="background-image: url({cover:url}); background-position: {cover:position};" style="height: 400px !important">
 	
