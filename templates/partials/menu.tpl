@@ -8,6 +8,8 @@
 		<i class="fa fa-lg fa-comment-o"></i>
 	</button>
 
+	<!-- IMPORT partials/account/menu.tpl -->
+
 	<!-- IF brand:logo -->
 	<a href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->">
 		<img alt="{brand:logo:alt}" class="{brand:logo:display} forum-logo" style="max-height: 60px !important; padding-top: 5px;" src="{brand:logo}" />

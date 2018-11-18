@@ -3,7 +3,7 @@
 	
 	<!-- IF loggedIn -->
 	<!-- IF !isSelf -->
-	<button style="margin-top: 30px; margin-left: 20px; float: left;" class="btn-morph fab <!-- IF isFollowing -->heart<!-- ELSE -->plus<!-- ENDIF isFollowing --><!-- IF banned --> hide<!-- ENDIF banned -->" title="<!-- IF isFollowing -->[[global:unfollow]]<!-- ELSE -->[[global:follow]]<!-- ENDIF isFollowing -->">
+	<button style="margin-top: 30px; margin-left: 30px; float: left;" class="btn-morph fab <!-- IF isFollowing -->heart<!-- ELSE -->plus<!-- ENDIF isFollowing --><!-- IF banned --> hide<!-- ENDIF banned -->" title="<!-- IF isFollowing -->[[global:unfollow]]<!-- ELSE -->[[global:follow]]<!-- ENDIF isFollowing -->">
 		<span style="margin-left: 20px;font-size: 16px;">
 			<span class="s1"></span>
 			<span class="s2"></span>
@@ -13,7 +13,7 @@
 	<!-- ENDIF !isSelf -->
 	<!-- ENDIF loggedIn -->
 
-	<a href="{config.relative_path}/user/{userslug}/edit" class="btn btn-xs btn-primary" style="margin-top: 30px; margin-right: 20px; float: right; padding: 10px">
+	<a href="{config.relative_path}/user/{userslug}/edit" class="btn btn-xs btn-primary" style="margin-top: 30px; margin-right: 30px; float: right; padding: 10px">
 		[[user:edit]]
 	</a>
 	
@@ -28,8 +28,6 @@
 	</div>
 
 	<div class="container">
-		<!-- IMPORT partials/account/menu.tpl -->
-
 		<!-- IF allowCoverPicture -->
 		<!-- IF canEdit -->
 		<div class="controls">
