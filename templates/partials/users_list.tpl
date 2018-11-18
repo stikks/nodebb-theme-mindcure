@@ -23,8 +23,9 @@
 
 		<!-- IF section_sort-reputation -->
 		<div title="reputation" class="reputation">
-			<i class="fa fa-star"></i>
-			<span class="formatted-number">{users.reputation}</span>
+            <i class="fa fa-star"></i>
+            <span class="formatted-number">{users.reputation}</span>
+            <span class="stars">{users.reputation}</span>
 		</div>
 		<!-- ENDIF section_sort-reputation -->
 
