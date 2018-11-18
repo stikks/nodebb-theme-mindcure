@@ -9,6 +9,7 @@
 	<!-- ENDIF user.picture -->
 	<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i>
 	<!-- ENDIF user.uid -->
+	<span>This is a new year for love</span>
 </div>
 
 <section class="menu-section" data-section="navigation">
