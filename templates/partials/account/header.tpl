@@ -42,4 +42,13 @@
 		<!-- ENDIF canEdit -->
 		<!-- ENDIF allowCoverPicture -->
 	</div>
+	<div>
+		<!-- IF !reputation:disabled -->
+		<div class="stat" style="font-size: 15px; min-width: 50px;">
+			<span style="display: inline-block; color: gold"><i class="fa fa-star"></i></span>
+			<div class="human-readable-number" style="display: inline-block" title="{reputation}">{reputation}</div>
+			<!-- <span class="stat-label">[[global:reputation]]</span> -->
+		</div>
+		<!-- ENDIF !reputation:disabled -->
+	</div>
 </div>
