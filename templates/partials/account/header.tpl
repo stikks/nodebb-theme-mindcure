@@ -2,7 +2,7 @@
 
 <div class="cover" component="account/cover" style="background-image: url({cover:url}); background-position: {cover:position};" style="height: 400px !important">
 	
-	<button>
+	<button class="btn btn-xs btn-primary" style="margin-top: 30px; float: right">
 		<a href="{config.relative_path}/user/{userslug}/edit">[[user:edit]]</a>
 	</button>
 	
