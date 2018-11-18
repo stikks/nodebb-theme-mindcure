@@ -28,7 +28,7 @@
 				<!-- IF !maintenanceHeader -->
 				<!-- IF config.loggedIn -->
 
-				<ul id="logged-in-menu" class="nav navbar-nav navbar-right" style="padding-top:7px">
+				<ul id="logged-in-menu" class="nav navbar-nav navbar-right" style="padding-top:12px">
 					<!-- IF !config.disableChat -->
 					<li class="chats dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="{relative_path}/user/{user.userslug}/chats" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown" data-ajaxify="false" role="button">
@@ -215,7 +215,7 @@
 					</li>
 				</ul>
 
-				<ul id="main-nav" class="nav navbar-nav" style="padding-left:6em !important; padding-top:12px">
+				<ul id="main-nav" class="nav navbar-nav" style="padding-left:8em !important; padding-top:12px">
 					<!-- BEGIN navigation -->
 					<!-- IF function.displayMenuItem, @index -->
 					<li class="{navigation.class}">
