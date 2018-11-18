@@ -82,5 +82,7 @@
 		<!-- ENDIF @first -->
 		<li id="{profile_links.id}" class="plugin-link <!-- IF profile_links.public -->public<!-- ELSE -->private<!-- ENDIF profile_links.public -->"><a href="{config.relative_path}/user/{userslug}/{profile_links.route}"><!-- IF ../icon --><i class="fa fa-fw {profile_links.icon}"></i> <!-- END -->{profile_links.name}</a></li>
 		<!-- END profile_links -->
-	</ul>
+        
+        <li><a href="https://mindcureglobal.com/terms">Forum Policy</a></li>
+    </ul>
 </div>
