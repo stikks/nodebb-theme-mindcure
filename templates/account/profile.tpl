@@ -32,12 +32,6 @@
 		<!-- ENDIF aboutme -->
 
 		<div class="account-stats">
-			<!-- IF !reputation:disabled -->
-			<div class="stat">
-				<div class="human-readable-number" title="{reputation}">{reputation}</div>
-				<!-- <span class="stat-label">[[global:reputation]]</span> -->
-			</div>
-			<!-- ENDIF !reputation:disabled -->
 
 			<div class="stat">
 				<div class="human-readable-number" title="{postcount}">{postcount}</div>
@@ -64,7 +58,9 @@
 			<!--  <span>[[user:joined]]</span>
 			 <strong class="timeago" title="{joindateISO}"></strong> -->
 
-			<span class="stars">{users.reputation}</span><br>
+			<div style="text-align: center !important">
+				<span class="stars">{users.reputation}</span><br>
+			</div>
 
 			<span>[[user:lastonline]]</span>
 			<strong class="timeago" title="{lastonlineISO}"></strong><br />
