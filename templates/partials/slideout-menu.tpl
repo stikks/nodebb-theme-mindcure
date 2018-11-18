@@ -3,7 +3,9 @@
 	<!-- IF user.picture -->
 	<img src="{user.picture}"/>
 	<!-- ELSE -->
-	<div class="user-icon" style="background-color: {user.icon:bgColor};">{user.icon:text}</div>
+	<div class="user-icon" style="background-color: {user.icon:bgColor};">
+		<i class="fa fa-user fa-fw"></i> 
+	</div>
 	<!-- ENDIF user.picture -->
 	<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i>
 	<!-- ENDIF user.uid -->
@@ -20,7 +22,7 @@
 	<ul class="menu-section-list" component="header/usercontrol"></ul>
 </section>
 
-<section>
+<section class="menu-section">
     <h3 class="menu-section-title">
         <a href="https://mindcureglobal.com/terms">Forum policy</a>
     </h3>
