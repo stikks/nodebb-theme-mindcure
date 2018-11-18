@@ -168,8 +168,8 @@
 				<ul class="nav navbar-nav navbar-right" style="padding-top:12px">
 					<li>
 						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET">
-							<button id="search-button" type="button" class="btn btn-link" style="max-width: 135px;">
-								<span>Advanced search</span>
+							<button id="search-button" type="button" class="btn btn-primary" style="max-width: 135px;">
+								Advanced search
 							</button>
 							<div class="hidden" id="search-fields">
 								<div class="form-group">
