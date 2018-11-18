@@ -34,7 +34,6 @@
 		<div class="account-stats">
 			<!-- IF !reputation:disabled -->
 			<div class="stat">
-				<img src="">
 				<div class="human-readable-number" title="{reputation}">{reputation}</div>
 				<!-- <span class="stat-label">[[global:reputation]]</span> -->
 			</div>
@@ -64,6 +63,8 @@
 		<div class="text-center profile-meta">
 			<!--  <span>[[user:joined]]</span>
 			 <strong class="timeago" title="{joindateISO}"></strong> -->
+
+			<span class="stars">{users.reputation}</span><br>
 
 			<span>[[user:lastonline]]</span>
 			<strong class="timeago" title="{lastonlineISO}"></strong><br />
