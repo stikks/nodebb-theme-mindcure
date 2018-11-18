@@ -1,6 +1,11 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
 
 <div class="cover" component="account/cover" style="background-image: url({cover:url}); background-position: {cover:position};" style="height: 400px !important">
+	
+	<button>
+		<a href="{config.relative_path}/user/{userslug}/edit">[[user:edit]]</a>
+	</button>
+	
 	<div class="avatar-wrapper" data-uid="{uid}">
 		<!-- IF picture -->
 		<img src="{picture}" class="avatar avatar-xl avatar-rounded" />
@@ -8,10 +13,6 @@
         <img src="https://mindcureglobal.com/static/images/boss.png" class="avatar avatar-xl avatar-rounded" />    
 		<!-- ENDIF picture -->
 		<i component="user/status" class="fa fa-circle status {status}" title="[[global:{status}]]"></i>
-
-		<button>
-			<a href="{config.relative_path}/user/{userslug}/edit">[[user:edit]]</a>
-		</button>
 
 		<!-- IF loggedIn -->
 		<!-- IF !isSelf -->
