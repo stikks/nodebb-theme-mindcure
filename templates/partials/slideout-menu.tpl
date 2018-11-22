@@ -8,8 +8,10 @@
 	</div>
 	<!-- ENDIF user.picture -->
 	<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i>
+	<!-- ELSE -->
+	<img src="https://mindcureglobal.com/static/images/logo_icon.png"/>
 	<!-- ENDIF user.uid -->
-	<span>This is a new year for love</span>
+	<span></span>
 </div>
 
 <section class="menu-section" data-section="navigation">
