@@ -1,7 +1,9 @@
 <div class="menu-profile">
 	<!-- IF user.uid -->
 	<!-- IF user.picture -->
-	<img src="{user.picture}"/>
+	<a href="{relative_path}/user/{user.userslug}">
+		<img src="{user.picture}"/>
+	</a>
 	<!-- ELSE -->
 	<div class="user-icon" style="background-color: {user.icon:bgColor};">
 		<i class="fa fa-user fa-fw"></i> 
