@@ -44,7 +44,7 @@
 				<!-- BEGIN icons -->@value<!-- END icons -->
 
 				<!-- IF !topics.noAnchor -->
-				<a href="{config.relative_path}/topic/{topics.slug}<!-- IF topics.bookmark -->/{topics.bookmark}<!-- ENDIF topics.bookmark -->" itemprop="url">{topics.title}</a><br />
+				<a href="{config.relative_path}/topic/{topics.slug}<!-- IF topics.bookmark -->/{topics.bookmark}<!-- ENDIF topics.bookmark -->" itemprop="url" class="f-16">{topics.title}</a><br />
 				<!-- ELSE -->
 				<span>{topics.title}</span><br />
 				<!-- ENDIF !topics.noAnchor -->
