@@ -60,8 +60,8 @@
 			</div>
 
 			<div class="stat profile-stat">
-				<span class="profile_icons profile_followers"><i class="fa fa-user"></i></span>
-				<div class="human-readable-number profile_following" data-toggle="tooltip" data-placement="top" title="{followingCount}">{followingCount}</div>
+				<span class="profile_icons profile_following"><i class="fa fa-user"></i></span>
+				<div class="human-readable-number profile_block" data-toggle="tooltip" data-placement="top" title="{followingCount}">{followingCount}</div>
 				<!--  <span class="stat-label">[[user:following]]</span> -->
 			</div>
 		</div>
