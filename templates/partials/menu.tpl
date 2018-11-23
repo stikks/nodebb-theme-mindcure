@@ -5,9 +5,7 @@
 	</button>
 
 	<!-- IF loggedIn -->
-	<!-- IF isSelf -->
 	<!-- IMPORT partials/account/menu.tpl -->
-	<!-- ENDIF isSelf -->
 	<!-- ENDIF loggedIn -->
 
 	<button type="button" class="navbar-toggle hidden" id="mobile-chats">

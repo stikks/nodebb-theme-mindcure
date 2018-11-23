@@ -5,8 +5,8 @@
 	<!-- END widgets.header -->
 </div>
 <div class="recent">
-	<div class="btn-toolbar">
-		<div class="pull-left margin-top-10">
+	<div class="btn-toolbar margin-bottom-10">
+		<div class="pull-left">
 			<!-- IF loggedIn -->
 			<button component="category/post" id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
 			<!-- ELSE -->

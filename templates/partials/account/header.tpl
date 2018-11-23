@@ -13,9 +13,11 @@
 	<!-- ENDIF !isSelf -->
 	<!-- ENDIF loggedIn -->
 
+	<!-- IF isSelf -->
 	<a href="{config.relative_path}/user/{userslug}/edit" class="btn btn-xs btn-primary" style="margin-top: 30px; margin-right: 30px; float: right; padding: 10px">
 		[[user:edit]]
 	</a>
+	<!-- ENDIF isSelf -->
 	
 	<div class="avatar-wrapper" data-uid="{uid}">
 		<!-- IF picture -->
