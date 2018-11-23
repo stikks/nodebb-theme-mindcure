@@ -1,6 +1,14 @@
 <div class="menu-profile">
 	<!-- IF user.uid -->
-	
+	<!-- IF user.picture -->
+	<a href="{relative_path}/user/{user.userslug}">
+		<img src="{user.picture}"/>
+	</a>
+	<!-- ELSE -->
+	<div class="user-icon" style="background-color: {user.icon:bgColor};">
+		<i class="fa fa-user fa-fw"></i> 
+	</div>
+	<!-- ENDIF user.picture -->
 	<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i>
 	<!-- ELSE -->
 	<img src="https://mindcureglobal.com/static/images/logo_icon.png"/>
