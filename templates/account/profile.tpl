@@ -33,34 +33,34 @@
 
 		<div class="account-stats">
 			<!-- IF !reputation:disabled -->
-			<div class="stat" style="font-size: 15px; min-width: 50px;">
-				<span style="display: inline-block; color: gold"><i class="fa fa-star"></i></span>
-				<div class="human-readable-number" style="display: inline-block" title="{reputation}">{reputation}</div>
+			<div class="stat profile-stat">
+				<span class="profile_icons profile_icon_star"><i class="fa fa-star"></i></span>
+				<div class="human-readable-number profile_block" title="{reputation}">{reputation}</div>
 				<!-- <span class="stat-label">[[global:reputation]]</span> -->
 			</div>
 			<!-- ENDIF !reputation:disabled -->
 
-			<div class="stat" style="font-size: 15px; min-width: 50px;">
-				<span style="display: inline-block; color: burlywood"><i class="fa fa-download"></i></span>
-				<div class="human-readable-number" style="display: inline-block" title="{postcount}">{postcount}</div>
+			<div class="stat profile-stat">
+				<span class="profile_icons profile_icon_views"><i class="fa fa-download"></i></span>
+				<div class="human-readable-number profile_block" title="{postcount}">{postcount}</div>
 				<!--  <span class="stat-label">[[global:posts]]</span> -->
 			</div>
 
-			<div class="stat" style="font-size: 15px; min-width: 50px;">
-				<span style="display: inline-block; color: cadetblue"><i class="fa fa-eye"></i></span>
-				<div class="human-readable-number" style="display: inline-block" title="{profileviews}">{profileviews}</div>
+			<div class="stat profile-stat">
+				<span  class="profile_icons profile_cadet"><i class="fa fa-eye"></i></span>
+				<div class="human-readable-number profile_block" title="{profileviews}">{profileviews}</div>
 				<!--  <span class="stat-label">[[user:profile_views]]</span> -->
 			</div>
 
-			<div class="stat" style="font-size: 15px; min-width: 50px;">
-				<span style="display: inline-block; color: chocolate"><i class="fa fa-users"></i></span>
-				<div class="human-readable-number" style="display: inline-block" title="{followerCount}">{followerCount}</div>
+			<div class="stat profile-stat">
+				<span class="profile_icons profile_followers"><i class="fa fa-users"></i></span>
+				<div class="human-readable-number profile_block" title="{followerCount}">{followerCount}</div>
 				<!--  <span class="stat-label">[[user:followers]]</span> -->
 			</div>
 
-			<div class="stat" style="font-size: 15px; min-width: 50px;">
-				<span style="display: inline-block; color: lightcoral"><i class="fa fa-user"></i></span>
-				<div class="human-readable-number"  style="display: inline-block" title="{followingCount}">{followingCount}</div>
+			<div class="stat profile-stat">
+				<span class="profile_icons profile_followers"><i class="fa fa-user"></i></span>
+				<div class="human-readable-number profile_following" title="{followingCount}">{followingCount}</div>
 				<!--  <span class="stat-label">[[user:following]]</span> -->
 			</div>
 		</div>
@@ -142,7 +142,7 @@
 
 	<div class="row">
 		<div class="col-xs-12">
-			<h1 style="font-size: 14px; text-align: center; padding-bottom: 30px; font-weight: 600">[[pages:account/posts, {username}]]</h1>
+			<h1 class="posts-made">[[pages:account/posts, {username}]]</h1>
 
 			<div class="col-xs-12">
 				<!-- IF !posts.length -->
