@@ -70,7 +70,7 @@
 				<i class="counter unread-count" component="chat/icon" data-content="{unreadCount.chat}"></i>
 			</h3>
 			<ul class="menu-section-list chat-list" component="chat/list"></ul>
-            <p><a class="navigation-link" href="{relative_path}/user/{user.userslug}/chats">[[modules:chat.see_all]]</a></p>
+            <p class="pl-20"><a class="navigation-link" href="{relative_path}/user/{user.userslug}/chats">[[modules:chat.see_all]]</a></p>
 		</section>
 		<!-- ENDIF config.loggedIn -->
 	</nav>
