@@ -1,4 +1,5 @@
 <div class="account">
+
 	<!-- IMPORT partials/account/header.tpl -->
 
 	<div class="profile row">
