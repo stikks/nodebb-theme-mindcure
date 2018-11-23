@@ -81,7 +81,9 @@
 		<li id="user_label" class="dropdown" style="padding-top:8px">
 			<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
 				<!-- IF user.picture -->
-				<img component="header/userpicture" src="{user.picture}" alt="{user.username}"/>
+				<a href="{relative_path}/user/{user.userslug}">
+					<img component="header/userpicture" src="{user.picture}" alt="{user.username}"/>
+				</a>	
 				<!-- ELSE -->
 				<span component="header/usericon" class="user-icon" style="background-color: {user.icon:bgColor}; display: block;"><i class="fa fa-user fa-fw"></i> </span>
 				<!-- ENDIF user.picture -->
