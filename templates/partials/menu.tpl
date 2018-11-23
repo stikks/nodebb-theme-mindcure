@@ -4,7 +4,11 @@
 		<i class="fa fa-lg fa-fw fa-bars" style="color: #22220E !important"></i>
 	</button>
 
+	<!-- IF config.loggedIn -->
+	
 	<!-- IMPORT partials/account/menu.tpl -->
+
+	<!-- ENDIF config.loggedIn -->
 
 	<button type="button" class="navbar-toggle hidden" id="mobile-chats">
 		<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>
