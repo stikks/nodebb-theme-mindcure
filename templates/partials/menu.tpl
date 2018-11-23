@@ -5,7 +5,7 @@
 	</button>
 
 	<!-- IF config.loggedIn -->
-	
+
 	<!-- IMPORT partials/account/menu.tpl -->
 
 	<!-- ENDIF config.loggedIn -->
@@ -182,7 +182,7 @@
 		<li>
 			<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET">
 				<button id="search-button" type="button" class="btn btn-link" style="max-width: 135px;">
-					Advanced search
+					Quick search
 				</button>
 				<div class="hidden" id="search-fields">
 					<div class="form-group">
