@@ -42,25 +42,25 @@
 
 			<div class="stat profile-stat">
 				<span class="profile_icons profile_icon_views"><i class="fa fa-download"></i></span>
-				<div class="human-readable-number profile_block" title="{postcount}">{postcount}</div>
+				<div class="human-readable-number profile_block" data-toggle="tooltip" data-placement="top" title="{postcount}">{postcount}</div>
 				<!--  <span class="stat-label">[[global:posts]]</span> -->
 			</div>
 
 			<div class="stat profile-stat">
 				<span  class="profile_icons profile_cadet"><i class="fa fa-eye"></i></span>
-				<div class="human-readable-number profile_block" title="{profileviews}">{profileviews}</div>
+				<div class="human-readable-number profile_block" data-toggle="tooltip" data-placement="top" title="{profileviews}">{profileviews}</div>
 				<!--  <span class="stat-label">[[user:profile_views]]</span> -->
 			</div>
 
 			<div class="stat profile-stat">
 				<span class="profile_icons profile_followers"><i class="fa fa-users"></i></span>
-				<div class="human-readable-number profile_block" title="{followerCount}">{followerCount}</div>
+				<div class="human-readable-number profile_block" data-toggle="tooltip" data-placement="top" title="{followerCount}">{followerCount}</div>
 				<!--  <span class="stat-label">[[user:followers]]</span> -->
 			</div>
 
 			<div class="stat profile-stat">
 				<span class="profile_icons profile_followers"><i class="fa fa-user"></i></span>
-				<div class="human-readable-number profile_following" title="{followingCount}">{followingCount}</div>
+				<div class="human-readable-number profile_following" data-toggle="tooltip" data-placement="top" title="{followingCount}">{followingCount}</div>
 				<!--  <span class="stat-label">[[user:following]]</span> -->
 			</div>
 		</div>
