@@ -144,7 +144,7 @@
 	<div class="row">
 		<div class="col-xs-12">
 			<!-- IF !posts.length -->
-			<h1>[[pages:account/posts, {username}]]</h1>
+			<h1 class="posts-none">[[pages:account/posts, {username}]]</h1>
 			<!-- ELSE -->
 			<h1 class="posts-made">[[pages:account/posts, {username}]]</h1>
 			<!-- ENDIF !posts.length -->
