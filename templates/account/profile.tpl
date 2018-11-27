@@ -42,7 +42,7 @@
 			<!-- ENDIF !reputation:disabled -->
 
 			<div class="stat profile-stat">
-				<span class="profile_icons profile_icon_views"><i class="fa fa-download"></i></span>
+				<span class="profile_icons profile_icon_views"><i class="fa fa-pen"></i></span>
 				<div class="human-readable-number profile_block" data-toggle="tooltip" data-placement="top" title="{postcount}">{postcount}</div>
 				<!--  <span class="stat-label">[[global:posts]]</span> -->
 			</div>
