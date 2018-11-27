@@ -4,8 +4,8 @@
 	</button>
 	<ul class="dropdown-menu dropdown-menu-right">
 		<!-- IF config.loggedIn -->
-		<!-- IF !config.isSelf -->
-		<!-- IF !config.banned -->
+		<!-- IF !isSelf -->
+		<!-- IF !banned -->
 		<!-- IF !config.disableChat -->
 		<li class="<!-- IF !hasPrivateChat -->hidden<!-- ENDIF !hasPrivateChat -->">
 			<a component="account/chat" href="#">[[user:chat_with, {username}]]</a>
@@ -21,8 +21,8 @@
 			<a component="account/block" href="#"><!-- IF !../isBlocked -->[[user:block_user]]<!-- ELSE -->[[user:unblock_user]]<!-- END --></a>
 		</li>
 		<li class="divider"></li>
-		<!-- ENDIF !config.banned -->
-		<!-- ENDIF !config.isSelf -->
+		<!-- ENDIF !banned -->
+		<!-- ENDIF !isSelf -->
 		<!-- ENDIF config.loggedIn -->
 		<li>
 			<a href="{config.relative_path}/user/{userslug}" class="inline-block" id="profile">[[user:profile]]</a>
