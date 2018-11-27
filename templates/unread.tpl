@@ -1,3 +1,10 @@
+<style>
+    @media only screen and (min-width: 640px) {
+        #fab_user {
+            display: none
+        }
+    }
+</style>
 <!-- IMPORT partials/breadcrumbs.tpl -->
 <div widget-area="header">
 	<!-- BEGIN widgets.header -->
