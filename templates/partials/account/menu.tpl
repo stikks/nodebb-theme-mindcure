@@ -3,15 +3,17 @@
 		<i class="fa fa-user"></i>
 	</button>
 	<ul class="dropdown-menu dropdown-menu-right">
-		<!-- IF loggedIn -->
-		<!-- IF !isSelf -->
-		<!-- IF !banned -->
+		<!-- IF config.loggedIn -->
+		<!-- IF !config.isSelf -->
+		<!-- IF !config.banned -->
+		<!-- IF !config.disableChat -->
 		<li class="<!-- IF !hasPrivateChat -->hidden<!-- ENDIF !hasPrivateChat -->">
 			<a component="account/chat" href="#">[[user:chat_with, {username}]]</a>
 		</li>
 		<li>
 			<a component="account/new-chat" href="#">[[user:new_chat_with, {username}]]</a>
 		</li>
+		<!-- ENDIF !config.disableChat -->
 		<li>
 			<a component="account/flag" href="#">[[user:flag-profile]]</a>
 		</li>
@@ -19,9 +21,9 @@
 			<a component="account/block" href="#"><!-- IF !../isBlocked -->[[user:block_user]]<!-- ELSE -->[[user:unblock_user]]<!-- END --></a>
 		</li>
 		<li class="divider"></li>
-		<!-- ENDIF !banned -->
-		<!-- ENDIF !isSelf -->
-		<!-- ENDIF loggedIn -->
+		<!-- ENDIF !config.banned -->
+		<!-- ENDIF !config.isSelf -->
+		<!-- ENDIF config.loggedIn -->
 		<li>
 			<a href="{config.relative_path}/user/{userslug}" class="inline-block" id="profile">[[user:profile]]</a>
 		</li>
