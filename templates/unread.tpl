@@ -35,8 +35,8 @@
 			</ul>
 		</div>
 
-		<div component="category/dropdown" class="btn-group pull-right category-dropdown-container">
-			<button type="button" id="fab_user" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+		<div component="category/dropdown" id="pc-menu" class="btn-group pull-right category-dropdown-container">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 				<!-- IF selectedCategory --><!-- IF selectedCategory.icon --><span class="fa-stack"><i style="color: {selectedCategory.bgColor};" class="fa fa-circle fa-stack-2x"></i><i class="fa fa-fw fa-stack-1x {selectedCategory.icon}" style="color: {selectedCategory.color};"></i></span><!-- ENDIF selectedCategory.icon --> {selectedCategory.name}<!-- ELSE -->
 				[[unread:all_categories]]<!-- ENDIF selectedCategory --> <span class="caret"></span>
 			</button>
@@ -68,7 +68,7 @@
 
 	<hr class="hidden-xs"/>
 
-	<div class="category">
+	<div class="category pop-vox">
 		<div id="category-no-topics" class="alert alert-warning <!-- IF topics.length -->hidden<!-- ENDIF topics.length -->" style="margin: 10px">[[unread:no_unread_topics]]</div>
 
 		<a href="{config.relative_path}/{selectedFilter.url}{querystring}">
