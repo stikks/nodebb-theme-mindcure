@@ -68,9 +68,9 @@
 				<small class="visible-xs-inline">
 					<i class="fa fa-reply"></i> &nbsp;
 					<!-- IF topics.teaser.timestamp -->
-					<span class="timeago" title="{topics.teaser.timestampISO}"></span>
+					<span class="timeago time_ago" title="{topics.teaser.timestampISO}"></span>
 					<!-- ELSE -->
-					<span class="timeago" title="{topics.timestampISO}"></span>
+					<span class="timeago time_ago" title="{topics.timestampISO}"></span>
 					<!-- ENDIF topics.teaser.timestamp -->
 				</small>
 			</h2>
