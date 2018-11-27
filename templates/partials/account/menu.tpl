@@ -6,14 +6,12 @@
 		<!-- IF loggedIn -->
 		<!-- IF !isSelf -->
 		<!-- IF !banned -->
-		<!-- IF !config.disableChat -->
 		<li class="<!-- IF !hasPrivateChat -->hidden<!-- ENDIF !hasPrivateChat -->">
 			<a component="account/chat" href="#">[[user:chat_with, {username}]]</a>
 		</li>
 		<li>
 			<a component="account/new-chat" href="#">[[user:new_chat_with, {username}]]</a>
 		</li>
-		<!-- ENDIF !config.disableChat -->
 		<li>
 			<a component="account/flag" href="#">[[user:flag-profile]]</a>
 		</li>
