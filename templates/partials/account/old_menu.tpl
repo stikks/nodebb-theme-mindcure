@@ -1,6 +1,6 @@
 <div class="btn-group account-fab bottom-sheet custom-fab">
-	<button type="button" class="fab dropdown-toggle" id="<!-- IF isSelf -->pc-menu<!-- ENDIF isSelf -->" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		<i class="fa fa-ellipsis-v"></i>
+	<button type="button" class="fab dropdown-toggle br0" id="<!-- IF isSelf -->pc-menu<!-- ENDIF isSelf -->" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<i class="fa fa-ellipsis-h"></i>
 	</button>
 	<ul class="dropdown-menu dropdown-menu-right">
 		<!-- IF loggedIn -->
