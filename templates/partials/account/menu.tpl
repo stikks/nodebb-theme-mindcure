@@ -27,10 +27,10 @@
 		<li>
 			<a href="{config.relative_path}/user/{user.userslug}" class="inline-block" id="profile">[[user:profile]]</a>
 		</li>
-		<!-- IF showHidden -->
+		<!-- IF config.showHidden -->
 		<li><a href="{config.relative_path}/user/{user.userslug}/edit">[[user:edit]]</a></li>
 		<li><a href="{config.relative_path}/user/{user.userslug}/settings">[[user:settings]]</a></li>
-		<!-- ENDIF showHidden -->
+		<!-- ENDIF config.showHidden -->
 
 		<!-- IF !isSelf -->
 		<!-- IF canBan -->
