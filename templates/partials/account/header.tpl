@@ -3,7 +3,7 @@
 	
 	<!-- IF loggedIn -->
 	<!-- IF !isSelf -->
-	<button style="margin-top: 30px; margin-left: 30px; float: left;" class="btn-morph fab <!-- IF isFollowing -->heart<!-- ELSE -->plus<!-- ENDIF isFollowing --><!-- IF banned --> hide<!-- ENDIF banned -->" title="<!-- IF isFollowing -->[[global:unfollow]]<!-- ELSE -->[[global:follow]]<!-- ENDIF isFollowing -->">
+	<button class="btn-morph fab follow-icon <!-- IF isFollowing -->heart<!-- ELSE -->plus<!-- ENDIF isFollowing --><!-- IF banned --> hide<!-- ENDIF banned -->" title="<!-- IF isFollowing -->[[global:unfollow]]<!-- ELSE -->[[global:follow]]<!-- ENDIF isFollowing -->">
 		<span style="margin-left: 20px;font-size: 16px;">
 			<span class="s1"></span>
 			<span class="s2"></span>
