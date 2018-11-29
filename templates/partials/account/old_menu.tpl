@@ -48,39 +48,39 @@
 		<!-- ENDIF isAdmin -->
 		<!-- ENDIF !isSelf -->
 
-		<li id="pc-menu" class="divider"></li>
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/following">[[user:following]]</a></li>
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/followers">[[user:followers]]</a></li>
+		<li class="divider"></li>
+		<li><a href="{config.relative_path}/user/{userslug}/following">[[user:following]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/followers">[[user:followers]]</a></li>
 		<!-- IF showHidden -->
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/blocks">[[user:blocks]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/blocks">[[user:blocks]]</a></li>
 		<!-- ENDIF showHidden -->
-		<li id="pc-menu" class="divider"></li>
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/topics">[[global:topics]]</a></li>
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/posts">[[global:posts]]</a></li>
+		<li class="divider"></li>
+		<li><a href="{config.relative_path}/user/{userslug}/topics">[[global:topics]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/posts">[[global:posts]]</a></li>
 		<!-- IF !reputation:disabled -->
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/best">[[global:best]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/best">[[global:best]]</a></li>
 		<!-- ENDIF !reputation:disabled -->
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/groups">[[global:header.groups]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/groups">[[global:header.groups]]</a></li>
 
 		<!-- IF showHidden -->
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/categories">[[user:watched_categories]]</a></li>
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/bookmarks">[[user:bookmarks]]</a></li>
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/watched">[[user:watched]]</a></li>
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/ignored">[[user:ignored]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/categories">[[user:watched_categories]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/bookmarks">[[user:bookmarks]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/watched">[[user:watched]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/ignored">[[user:ignored]]</a></li>
 		<!-- IF !reputation:disabled -->
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/upvoted">[[global:upvoted]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/upvoted">[[global:upvoted]]</a></li>
 		<!-- IF !downvote:disabled -->
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/downvoted">[[global:downvoted]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/downvoted">[[global:downvoted]]</a></li>
 		<!-- ENDIF !downvote:disabled -->
 		<!-- ENDIF !reputation:disabled -->
-		<li id="pc-menu"><a href="{config.relative_path}/user/{userslug}/uploads">[[global:uploads]]</a></li>
+		<li><a href="{config.relative_path}/user/{userslug}/uploads">[[global:uploads]]</a></li>
 		<!-- ENDIF showHidden -->
 
 		<!-- BEGIN profile_links -->
 		<!-- IF @first -->
-		<li id="pc-menu" class="divider"></li>
+		<li class="divider"></li>
 		<!-- ENDIF @first -->
-		<li id="{profile_links.id} pc-menu" class="plugin-link <!-- IF profile_links.public -->public<!-- ELSE -->private<!-- ENDIF profile_links.public -->"><a href="{config.relative_path}/user/{userslug}/{profile_links.route}"><!-- IF ../icon --><i class="fa fa-fw {profile_links.icon}"></i> <!-- END -->{profile_links.name}</a></li>
+		<li id="{profile_links.id}" class="plugin-link <!-- IF profile_links.public -->public<!-- ELSE -->private<!-- ENDIF profile_links.public -->"><a href="{config.relative_path}/user/{userslug}/{profile_links.route}"><!-- IF ../icon --><i class="fa fa-fw {profile_links.icon}"></i> <!-- END -->{profile_links.name}</a></li>
 		<!-- END profile_links -->
         
         <li id="pc-menu"><a href="https://mindcureglobal.com/terms">Forum Policy</a></li>
